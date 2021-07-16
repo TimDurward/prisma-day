@@ -1,5 +1,5 @@
 ### BUILDER ###
-FROM amplication-app-image as builder
+FROM gcr.io/amplication-deply-test/prisma-day as builder
 
 # Define how verbose should npm install be
 ARG NPM_LOG_LEVEL=silent
