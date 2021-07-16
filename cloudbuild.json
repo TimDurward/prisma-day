@@ -1,0 +1,15 @@
+{
+  "steps": [
+    {
+      "name": "gcr.io/kaniko-project/executor:latest",
+      "args": [
+        "--destination=gcr.io/$PROJECT_ID/prisma-day:latest",
+        "--cache=true",
+        "--cache-ttl=3h"
+      ]
+    }
+  ],
+  "options": {
+    "machineType": "N1_HIGHCPU_8"
+  }
+}
