@@ -18,7 +18,7 @@ export class AuthResolver {
       args.credentials.password
     );
     if (!user) {
-      throw new ApolloError("The passed credentials are incorrect");
+      throw new ApolloError("The passed credentials are incorrect... Source change for kaniko to miss cache layer");
     }
     return user;
   }
