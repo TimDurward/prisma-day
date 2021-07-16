@@ -1,5 +1,5 @@
 ### BUILDER ###
-FROM node:14-alpine as builder
+FROM amplication-app-image as builder
 
 # Define how verbose should npm install be
 ARG NPM_LOG_LEVEL=silent
