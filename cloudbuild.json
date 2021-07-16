@@ -5,7 +5,7 @@
       "entrypoint": "bash",
       "args": [
         "-c",
-        "docker pull gcr.io/amplication-deply-test/prisma-day:85b079ae8e555164349869257456180f4ff584a6 || exit 0"
+        "docker pull gcr.io/amplication-deply-test/prisma-day:latest || exit 0"
       ]
     },
     {
@@ -15,7 +15,7 @@
         "-t",
         "gcr.io/$PROJECT_ID/prisma-day:latest",
         "--cache-from",
-        "gcr.io/$PROJECT_ID/prisma-day:85b079ae8e555164349869257456180f4ff584a6",
+        "gcr.io/$PROJECT_ID/prisma-day:latest",
         "."
       ]
     }
